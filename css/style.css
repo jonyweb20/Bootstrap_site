@@ -19,15 +19,16 @@ header{
     opacity: .5;
     background: url("../img/bg.jpg") no-repeat  center/cover;
 }
-.navbar{
+/*.navbar{
     background-color: #4be3b0;
-}
-.nav-link .navbar-brand {
+}*/
+.nav-link, .navbar-brand {
     color: #f4f4f4;
 }
-nav-link:hover{
-    background-color: #f4f4f4;
-    color: #4be3b0;
+.nav-link:hover{
+    background-color: cornflowerblue;
+    color: cyan;
+    border-radius: 1em;
 }
 h1{
 color: #4be3b0;
@@ -53,5 +54,8 @@ color: #4be3b0;
     padding: 1rem;
     top: 0;
     border-top-right-radius: 0;
+}
+.carousel-caption{
+color: black;
 }
 /*team end*/

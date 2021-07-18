@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-spy="scroll" data-target="#navbarMenu">
 <!--navbar-->
-<nav class="navbar navbar-expand-md fixed-top navbar-info bg-danger" id="navbarMenu">
+<nav class="navbar navbar-expand-md fixed-top bg-info" id="navbarMenu">
     <a href="" class="navbar-brand">Home</a>
     <!--burger menu should be here-->
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
@@ -18,11 +19,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav w-100 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <!--<li class="nav-item"><a href="#" class="nav-link"></a></li>-->
-            <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="https://www.facebook.com/" class="nav-link" target="_blank">
                 <i class="fab fa-facebook-f d-md-none"> <span>Facebook</span></i>
             </a></li>
@@ -88,6 +89,49 @@
             </div>
         </div>
     </div>
+</div>
+<!--carousel-->
+<div id="MyIndicators" class="carousel slide" data-ride="carousel" data-inerval="3000">
+    <ol class="carousel-indicators">
+        <li data-target="#MyIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#MyIndicators" data-slide-to="1"></li>
+        <li data-target="#MyIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/carus1.jpg" class="d-flex w-100 j" alt="ton1">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>One Slide</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/carus2.jpg" class="d-flex w-100" alt="ton2">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>Two Slide</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/carus3.jpg" class="d-flex w-100" alt="ton3">
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h4>Three Slide</h4>
+                <p>Lorem ipsum dolor sit amet, adipisicing.
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#MyIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <!-- <span class="visually-hidden">Previous</span>-->
+        <!--<i class="bi bi-chevron-left"></i>-->
+    </a>
+    <a class="carousel-control-next" href="#MyIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <!-- <span class="visually-hidden">Next</span>-->
+       <!-- <i class="bi bi-chevron-right"></i>-->
+    </a>
 </div>
 <!--team-->
 <div class="team" id="team">

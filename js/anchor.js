@@ -4,8 +4,8 @@ $(function() {
             scrollTop: $('#' + $(this).data('value')).offset().top
         }, 1000)
     });
-    
-    
+
+
     $('#form').on('submit', function(e) {
         var data = $("#form:input").serialize();
         $.ajax({
@@ -17,7 +17,7 @@ $(function() {
             },
             error: function(msg) {
                 alert('Ошибка');
-            }, 
+            },
         });
         e.preventDefault();
     });
@@ -29,11 +29,3 @@ let maskOptions = {
     mask: '+{7(000)}000-00-00'
 };
 let tel = new IMask(elem, maskOptions);
-
-
-
-
-
-
-
-
