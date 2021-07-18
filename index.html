@@ -21,7 +21,7 @@
         <ul class="navbar-nav w-100 justify-content-end">
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <!--<li class="nav-item"><a href="#" class="nav-link"></a></li>-->
+            <li class="nav-item"><a href="#MyIndicators" class="nav-link">Carousel</a></li>
             <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="https://www.facebook.com/" class="nav-link" target="_blank">
@@ -98,24 +98,24 @@
         <li data-target="#MyIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/carus1.jpg" class="d-flex w-100 j" alt="ton1">
-            <div class="carousel-caption d-none d-md-block">
+        <div class="col-6 offset-2 carousel-item active" data-interval="2000">
+            <img src="img/carus1.jpg" class="d-block w-50" alt="ton1">
+            <div class="carousel-caption d-none d-sm-block">
                 <h4>One Slide</h4>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/carus2.jpg" class="d-flex w-100" alt="ton2">
-            <div class="carousel-caption d-none d-md-block">
+        <div class="col-6 offset-2 carousel-item" data-interval="2000">
+            <img src="img/carus2.jpg" class="d-block w-50" alt="ton2">
+            <div class="carousel-caption d-none d-sm-block">
                 <h4>Two Slide</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
+                <p>Lorem ipsum dolor sit amet, adipisicing.
                 </p>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="img/carus3.jpg" class="d-flex w-100" alt="ton3">
-            <div class="carousel-caption d-none d-md-block text-black">
+        <div class="col-6 offset-2 carousel-item" data-interval="2000">
+            <img src="img/carus3.jpg" class="d-block w-50 ml-2" alt="ton3">
+            <div class="carousel-caption d-none d-sm-block">
                 <h4>Three Slide</h4>
                 <p>Lorem ipsum dolor sit amet, adipisicing.
                 </p>
@@ -124,13 +124,13 @@
     </div>
     <a class="carousel-control-prev" href="#MyIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <!-- <span class="visually-hidden">Previous</span>-->
-        <!--<i class="bi bi-chevron-left"></i>-->
+        <span class="visually text-info">Предыдущий</span>
+
     </a>
     <a class="carousel-control-next" href="#MyIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <!-- <span class="visually-hidden">Next</span>-->
-       <!-- <i class="bi bi-chevron-right"></i>-->
+        <span class="visually text-info">Следующий</span>
+
     </a>
 </div>
 <!--team-->

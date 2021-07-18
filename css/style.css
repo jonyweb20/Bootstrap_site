@@ -58,4 +58,7 @@ color: #4be3b0;
 .carousel-caption{
 color: black;
 }
+.carousel-control-next{
+  color: crimson;
+}
 /*team end*/
